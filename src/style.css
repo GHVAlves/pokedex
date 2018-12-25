@@ -1,0 +1,127 @@
+body {
+  overflow: hidden;
+}
+
+.pokedex {
+  position: relative;
+  margin: 0 auto;
+  width: 850px;
+  height: 600px;;
+  background: url('images/pokedex.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.display {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 6px;
+  height: 178px;
+  width: 273px;
+  top: 183px;
+  left: 68px;
+  background: #FFF;
+  padding: 5px;
+}
+
+.display.off {
+  background: #000;
+}
+
+.display .sprite {
+  float: left;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  background: #f2f2f2;
+}
+
+.display .sprite > img { 
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.display span.name {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.display .stats {
+  list-style: none;
+  margin-left: 10px;
+  float: left;
+  position: relative;
+  margin-top: -72px;
+  margin-left: 75px;
+}
+
+.display .types {
+  display: none;
+}
+
+.search {
+  position: relative;
+  border: 1px solid #8888;
+  border-radius: 7px;
+  height: 24px;
+  width: 254px;
+  top: 22px;
+  left: 495px;
+  background: transparent;
+  padding: 15px;
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.search::placeholder {
+  color: #FFF;
+}
+
+.search:focus {
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.search:active {
+  border: 1px solid #fff;
+}
+
+.button-search {
+  position: relative;
+  border: none;
+  border-radius: 7px;
+  height: 24px;
+  width: 24px;
+  top: 191px;
+  left: 429px;
+  background: transparent;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.button-search:focus {
+  border: none;
+  outline: none;
+}
+
+.button-on-off {
+  position: relative;
+  border: none;
+  border-radius: 7px;
+  height: 43px;
+  width: 43px;
+  top: 228px;
+  left: -226px;
+  background: transparent;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.button-on-off:focus {
+  border: none;
+  outline: none;
+}
